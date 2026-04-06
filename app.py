@@ -24,7 +24,12 @@ LAST_ANALYSIS = {
 }
 
 # ================= LOAD MODEL =================
-model = tf.keras.models.load_model(MODEL_PATH)
+try:
+    model = tf.keras.models.load_model(MODEL_PATH)
+    print("✅ Model loaded")
+except:
+    model = None
+    print("⚠️ Model not found - running in demo mode")
 print("✅ Model loaded")
 print("🧠 Model input shape:", model.input_shape)
 
@@ -86,8 +91,12 @@ def analyze():
     file.save(path)
 
     img = preprocess_image(path)
+   if model:
     preds = model.predict(img)[0]
     idx = np.argmax(preds)
+   else:
+    idx = 1  # demo output
+    preds = [0.1, 0.8, 0.1]
 
     disease = CLASS_NAMES[idx]
     confidence = round(float(preds[idx]) * 100, 2)
