@@ -1,0 +1,7 @@
+crop: pepper
+image_size: 224
+batch_size: 8
+epochs: 5
+learning_rate: 0.001
+num_classes: 2
+data_dir: data_crops/pepper

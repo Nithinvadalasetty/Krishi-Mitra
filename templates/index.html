@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krishi Mitra</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>🌱 Krishi Mitra</h1>
+    <p>AI-powered crop disease detection & remedies</p>
+
+    <div class="stats">
+      <div>🌡️ 28°C <span>Temperature</span></div>
+      <div>💧 68% <span>Soil Moisture</span></div>
+      <div>🌧️ 30% <span>Rain Chance</span></div>
+    </div>
+  </header>
+
+  <!-- MAIN GRID -->
+  <div class="grid">
+
+    <!-- ANALYZE -->
+    <div class="card">
+      <h2>Analyze your field</h2>
+
+      <form id="analyze-form" enctype="multipart/form-data">
+        <label>Crop name</label>
+        <input type="text" name="crop" placeholder="e.g. tomato" required>
+
+        <label>Leaf image</label>
+        <input type="file" name="image" accept="image/*" required>
+
+        <button id="analyze-btn">🔍 Analyze Crop</button>
+      </form>
+
+      <img id="preview-img">
+    </div>
+
+    <!-- RESULT -->
+    <div class="card">
+      <h2>Analysis result</h2>
+      <div id="analysis-result" class="result-box">
+        Upload a leaf image to see results.
+      </div>
+    </div>
+
+    <!-- CHATBOT -->
+    <div class="card chat">
+      <h2>🤖 Krishi Mitra Chatbot</h2>
+      <p class="hint">Ask about disease, spray, prevention…</p>
+
+      <div id="chat-box" class="chat-box"></div>
+
+      <div class="chat-input">
+        <input id="chat-input" placeholder="Type your question here">
+        <button onclick="sendChat()">➤</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+fastapi
+flask-cors
+tensorflow
+pillow
+numpy
+python-multipart
+ollama

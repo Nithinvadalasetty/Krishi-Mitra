@@ -1,0 +1,9 @@
+Leaf Image
+  ↓
+Crop-wise AI Engine
+  ↓
+Health Model
+  ↓
+Disease Model
+  ↓
+Chatbot Advisory System

@@ -1,0 +1,10 @@
+*.h5
+*.tflite
+models/
+data/
+data_crops/
+uploads/
+training/
+__pycache__/
+venv/
+.vscode/
