@@ -5,3 +5,8 @@ pillow
 numpy
 python-multipart
 ollama
+flask
+flask-cors
+numpy
+opencv-python-headless
+tensorflow==2.13.0
