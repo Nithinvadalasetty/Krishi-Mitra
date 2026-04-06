@@ -1,6 +1,4 @@
-fastapi
+flask
 flask-cors
-pillow
 numpy
-python-multipart
-ollama
+opencv-python
