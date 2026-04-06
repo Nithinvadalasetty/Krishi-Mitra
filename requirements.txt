@@ -1,4 +1,7 @@
-flask
+fastapi
 flask-cors
+tensorflow
+pillow
 numpy
-opencv-python
+python-multipart
+ollama
